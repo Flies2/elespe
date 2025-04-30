@@ -13,7 +13,7 @@
     <a href="{{ route('item.create') }}" class="bg-blue-500 text-white px-4 py-2 rounded">+ Tambah Item</a>
 
     <table class="table-auto w-full mt-4">
-        <thead>
+        <thead class="bg-gray-300">
             <tr>
                 <th class="border px-4 py-2">Nomer</th>
                 <th class="border px-4 py-2">Nama</th>

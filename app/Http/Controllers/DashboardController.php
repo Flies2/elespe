@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 
 class DashboardController extends Controller
 {
-    public function index () 
+    public function index()
     {
         $totalKategori = Kategori::count();
         $totalItem = Item::count();

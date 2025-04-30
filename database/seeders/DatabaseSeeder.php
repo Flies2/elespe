@@ -15,11 +15,11 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([
             KategoriSeeder::class,
-        ]);    
+        ]);
         User::factory()->create([
             'name' => 'admin',
             'email' => 'admin@kasir.com',
-            'password' => 'password123',
+            'password' => '123',
         ]);
     }
 }

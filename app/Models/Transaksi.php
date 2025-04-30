@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Transaksi extends Model
 {
-    protected $fillable = ['total'];
+    protected $fillable = ['total', 'pay_total', 'user_id'];
 
     public function items()
     {

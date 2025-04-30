@@ -28,21 +28,21 @@
         <div class="mt-8">
             <h2 class="text-xl font-semibold mb-2">Transaksi Terbaru</h2>
             <table class="table-auto w-full bg-white rounded shadow overflow-hidden">
-                <thead class="bg-gray-200 text-left">
+                <thead class="bg-gray-300">
                     <tr>
-                        <th class="px-4 py-2">Nomer</th>
-                        <th class="px-4 py-2">Tanggal</th>
-                        <th class="px-4 py-2">Total</th>
-                        <th class="px-4 py-2">Aksi</th>
+                        <th class="border px-4 py-2">Nomer</th>
+                        <th class="border px-4 py-2">Tanggal</th>
+                        <th class="border px-4 py-2">Total</th>
+                        <th class="border px-4 py-2">Aksi</th>
                     </tr>
                 </thead>
                 <tbody>
                     @forelse($transaksiTerakhir as $trx)
                         <tr class="border-t">
-                            <td class="px-4 py-2">{{ $loop->iteration }}</td>
-                            <td class="px-4 py-2">{{ $trx->created_at->format('d M Y H:i') }}</td>
-                            <td class="px-4 py-2">Rp{{ number_format($trx->total) }}</td>
-                            <td class="px-4 py-2">
+                            <td class="border px-4 py-2">{{ $loop->iteration }}</td>
+                            <td class="border px-4 py-2">{{ $trx->created_at->format('d M Y H:i') }}</td>
+                            <td class="border px-4 py-2">Rp{{ number_format($trx->total) }}</td>
+                            <td class="border px-4 py-2">
                                 <a href="{{ route('transaksi.struk', $trx->id) }}" class="text-blue-600 hover:underline">Lihat Struk</a>
                             </td>
                         </tr>
